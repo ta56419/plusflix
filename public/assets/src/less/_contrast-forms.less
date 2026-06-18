@@ -1,0 +1,349 @@
+// Style formularzy i panelu admin dla motywu Contrast
+
+// Komponenty admin
+.genre-admin,
+.platform-admin,
+.movie-admin {
+  background: @bg-white;
+  border-radius: @border-radius-md;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  padding: 24px 28px;
+  color: @text-dark;
+
+  h1 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    font-weight: 600;
+
+    a {
+      color: #0066ff;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    margin-top: 6px;
+  }
+
+  thead {
+    background: #f9fbff;
+    color: @text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  th,
+  td {
+    padding: 12px 14px;
+    border-bottom: 1px solid @border-dark;
+  }
+
+  tbody tr:hover {
+    background: #f6f8fb;
+  }
+
+  .ops a {
+    color: #0066ff;
+    font-weight: 600;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .empty {
+    padding: 12px 0;
+    color: @text-muted;
+  }
+}
+
+// Formularze
+.genre-form,
+.platform-form,
+.movie-form {
+  display: grid;
+  gap: 12px;
+
+  label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: @text-dark;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    padding: 10px 12px;
+    border: 1px solid @border-dark;
+    border-radius: @border-radius-sm;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #0066ff;
+      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.12);
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-primary {
+    background: #0066ff;
+    color: @bg-white;
+    border: none;
+    border-radius: @border-radius-sm;
+    padding: 10px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #0053d6;
+    }
+  }
+}
+
+// Login form
+.login-form {
+  input[type="password"] {
+    padding: 10px 12px;
+    border: 1px solid @border-dark;
+    border-radius: @border-radius-sm;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #0066ff;
+      box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.12);
+    }
+  }
+}
+
+// Select w formularzach
+.movie-form select {
+  padding: 10px 12px;
+  border: 1px solid @border-dark;
+  border-radius: @border-radius-sm;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: @bg-white;
+  color: @text-dark;
+
+  &:focus {
+    outline: none;
+    border-color: #0066ff;
+    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.12);
+  }
+}
+
+// Checkbox box dla gatunków
+.genre-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 12px 0;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+  }
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+// Checkbox box dla platform
+.platform-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  padding: 12px 0;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+  }
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+// Edit form
+.edit-form {
+  background: @bg-white;
+  border-radius: @border-radius-md;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  padding: 24px 28px;
+  margin-bottom: 18px;
+  color: @text-dark;
+
+  .form-group {
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+
+    label {
+      display: inline-block;
+      flex-grow: 1;
+    }
+
+    input[type="text"] {
+      flex-grow: 3;
+    }
+
+    textarea {
+      height: 300px;
+      flex-grow: 3;
+    }
+  }
+}
+
+// Admin panel
+.admin-panel {
+  background: @bg-white;
+  border-radius: @border-radius-md;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  padding: 24px 28px;
+  color: @text-dark;
+
+  h1 {
+    margin: 0 0 14px;
+    font-size: 28px;
+    letter-spacing: -0.3px;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    font-weight: 600;
+
+    a {
+      color: #0066ff;
+    }
+  }
+}
+
+// Admin grid
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+// Admin card
+.admin-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, @bg-white 100%);
+  border: 1px solid @border-dark;
+  border-radius: @border-radius-md;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #0066ff;
+    box-shadow: 0 8px 20px rgba(0, 102, 255, 0.12);
+    transform: translateY(-4px);
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: @text-dark;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: #0066ff;
+    color: @bg-white;
+    border: none;
+    border-radius: @border-radius-sm;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: #0053d6;
+    }
+  }
+}
+
+// Show page
+.show {
+  article {
+    font-style: italic;
+    color: #6d6d6d;
+  }
+}
+
+// Edit page
+.edit {
+  .edit-form {
+    margin-bottom: 1em;
+
+    .form-group {
+      margin-bottom: 1em;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+      }
+
+      label {
+        display: inline-block;
+        flex-grow: 1;
+      }
+
+      input[type="text"] {
+        flex-grow: 3;
+      }
+
+      textarea {
+        height: 300px;
+        flex-grow: 3;
+      }
+    }
+  }
+}

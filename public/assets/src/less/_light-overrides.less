@@ -1,0 +1,187 @@
+// Dodatkowe nadpisania dla motywu Jasnego
+
+label {
+  color: @primary-text !important;
+}
+
+.app-header {
+  background: linear-gradient(135deg, @bg-white 0, @bg-light 100%);
+  border-bottom: 1px solid @border-dark;
+
+  .logo {
+    .logo-plus {
+      color: @accent-color;
+    }
+
+    .logo-flix {
+      color: @primary-text;
+    }
+  }
+
+  .search-pill {
+    background: @bg-white;
+    border-color: @border-dark;
+
+    .search-input {
+      color: @primary-text;
+
+      &::placeholder {
+        color: @text-muted;
+      }
+    }
+
+    .icon-btn {
+      color: @text-muted;
+
+      &:hover {
+        background: @accent-color;
+        color: @bg-white;
+      }
+    }
+  }
+
+  .saved-btn {
+    background: @bg-white;
+    border-color: @border-dark;
+    color: @primary-text;
+  }
+}
+
+.filters {
+  background: @bg-white;
+  border-color: @border-dark;
+  color: @primary-text;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+
+  h4 {
+    color: @text-muted;
+  }
+
+  input[type="checkbox"] {
+    background: @bg-white;
+    border-color: @border-dark;
+  }
+
+  button[type="submit"] {
+    background: @accent-color;
+    color: @bg-white;
+
+    &:hover {
+      background: @accent-hover;
+    }
+  }
+}
+
+.search-section {
+  .search-wrapper {
+    background: @bg-white;
+    border-color: @border-dark;
+
+    .search-input {
+      color: @primary-text;
+    }
+
+    .filter-icon {
+      color: @text-muted;
+    }
+  }
+}
+
+.platforms-section {
+  .nav-arrow {
+    background: @bg-white;
+    border-color: @border-dark;
+    color: @primary-text;
+  }
+}
+
+.platform-badge {
+  &.disney,
+  &.hbo,
+  &.skyshowtime,
+  &.prime {
+    .platform-logo {
+      color: @bg-white !important;
+    }
+  }
+}
+
+.top-list-section {
+  .movie-card {
+    background: @bg-white;
+    border-color: @border-dark;
+
+    .movie-title {
+      color: @primary-text;
+    }
+
+    .movie-year {
+      color: @secondary-text;
+    }
+  }
+
+  .empty {
+    color: @secondary-text;
+  }
+}
+
+.show {
+  background: linear-gradient(180deg, @bg-light 0%, @primary-bg 100%);
+
+  .movie-banner {
+    background: linear-gradient(135deg, @bg-light 0%, @bg-white 100%);
+    color: @text-muted;
+    border: 2px dashed @border-dark;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .movie-title {
+    color: @primary-text;
+  }
+
+  .description-card {
+    background: @bg-white;
+    border-color: @border-dark;
+  }
+
+  .description-text {
+    color: @primary-text;
+  }
+
+  .meta-value {
+    color: @primary-text;
+  }
+
+  .section-title {
+    color: @primary-text;
+  }
+
+  .review-card {
+    background: @bg-white;
+    border-color: @border-dark;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  }
+
+  .review-stars .star-empty {
+    color: @border-muted;
+  }
+
+  .review-comment {
+    color: @primary-text;
+  }
+
+  .nav-link {
+    background: @bg-white;
+    border-color: @border-dark;
+    color: @primary-text;
+
+    &:hover {
+      background: @accent-color;
+      color: @bg-white;
+    }
+  }
+
+  .no-reviews {
+    color: @text-muted;
+  }
+}

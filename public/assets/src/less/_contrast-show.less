@@ -1,0 +1,394 @@
+// Style szczegółów filmów dla motywu Contrast
+
+.show {
+  background: linear-gradient(180deg, @primary-bg 0%, @primary-bg 100%);
+
+  .movie-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .movie-hero {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .movie-banner {
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(135deg, @secondary-text 0%, @secondary-text 100%);
+    border-radius: @border-radius-lg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4b5563;
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    border: 2px dashed #3a3a4e;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+  }
+
+  .movie-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: @primary-text;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .movie-rating-badge {
+    background: linear-gradient(135deg, @accent-color, @accent-color);
+    color: @primary-bg;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: @border-radius-sm;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+    display: inline-block;
+    }
+
+  .add-review-btn {
+        background: @accent-color;
+        color: @primary-bg;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: @border-radius-sm;
+        cursor: pointer;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.95rem;
+        transition: background 0.3s ease;
+        margin-top: 1rem;
+        display: inline-block;
+
+        &:hover {
+            background: @accent-hover;
+        }
+    }
+
+  .meta-label {
+    font-size: 0.9rem;
+    color: @accent-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-width: 100px;
+  }
+
+  .meta-value {
+    font-size: 1.1rem;
+    color: @primary-text;
+    font-weight: 400;
+  }
+
+  // Karty opisów
+  .description-card {
+    background: linear-gradient(135deg, rgba(22, 22, 42, 0.8) 0%, rgba(26, 26, 46, 0.6) 100%);
+    border: 1px solid @secondary-text;
+    border-radius: @border-radius-lg;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+
+  .section-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: @accent-color;
+  }
+
+  .description-text {
+    color: @primary-text;
+    margin-top: 0.5rem;
+  }
+
+  // Sekcje
+  .genres-section,
+  .platforms-section,
+  .reviews-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: @primary-text;
+    margin: 0;
+  }
+
+  .section-title::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(90deg, @accent-color 0%, transparent 100%);
+    margin-top: 0.5rem;
+  }
+
+  .platforms-grid {
+    display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+  }
+
+  .platform-badge {
+     position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: @border-radius-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px @border-light solid !important;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+      border-radius: @border-radius-md;
+      pointer-events: none;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+    }
+
+    &:hover::before {
+      background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    }
+
+    &.netflix {
+      background: @netflix-bg;
+
+      .platform-logo {
+        color: @netflix-accent;
+      }
+    }
+
+    &.hbo {
+      background: @hbo-bg;
+
+      .platform-logo {
+        color: @primary-text;
+      }
+    }
+
+    &.disney {
+      background: @disney-bg;
+
+      .platform-logo {
+        color: @primary-text;
+      }
+    }
+
+    &.prime {
+      background: @prime-bg;
+
+      .platform-logo {
+        color: @primary-text;
+      }
+    }
+
+    &.skyshowtime {
+      background: @skyshowtime-bg;
+
+      .platform-logo {
+        color: @primary-text;
+      }
+    }
+  }
+
+  .reviews-container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .review-card {
+    background: @primary-bg;
+    border: 1px solid @border-light;
+    border-radius: @border-radius-md;
+    padding: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+      border-radius: @border-radius-md;
+      pointer-events: none;
+    }
+
+    &:hover {
+      border-color: @accent-color;
+      box-shadow: 0 4px 16px rgba(99, 102, 241, 0.2);
+    }
+
+    &:hover::before {
+      background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    }
+  }
+
+  .review-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .review-stars .star-filled {
+    color: @accent-color;
+  }
+
+  .review-stars .star-empty {
+    color: @secondary-text;
+  }
+
+  .review-comment {
+    color: @primary-text;
+    line-height: 1.6;
+    margin-top: 0.75rem;
+  }
+
+  .genre-tag {
+    background: @accent-color;
+    color: @primary-bg;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: @primary-bg;
+    border: 1px solid @border-light;
+    color: @primary-text;
+    padding: 0.75rem 1.5rem;
+    border-radius: @border-radius-md;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+
+    &:hover {
+      background: @accent-color;
+      border-color: @accent-color;
+      color: @primary-bg;
+      transform: translateX(-4px);
+    }
+  }
+
+  .no-reviews {
+    text-align: center;
+    padding: 2rem;
+    color: @secondary-text;
+    font-style: italic;
+  }
+
+  @media (max-width: 968px) {
+    .movie-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .movie-banner {
+      height: 350px;
+    }
+
+    .movie-title {
+      font-size: 2rem;
+    }
+
+    .platforms-grid {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+  }
+
+  @media (max-width: 768px) {
+    .movie-detail-container {
+      padding: 1.5rem 1rem;
+    }
+
+    .movie-hero {
+      margin-bottom: 2rem;
+    }
+
+    .movie-banner {
+      height: 280px;
+      font-size: 2rem;
+    }
+
+    .movie-title {
+      font-size: 1.5rem;
+    }
+
+    .movie-rating-badge {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+
+    .movie-info-main {
+      gap: 1rem;
+    }
+
+    .platforms-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navigation-buttons {
+      flex-direction: column;
+    }
+
+    .nav-link {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .review-card {
+      padding: 1rem;
+    }
+  }
+}

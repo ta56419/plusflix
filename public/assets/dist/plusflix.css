@@ -1,0 +1,442 @@
+body.index {
+    background: linear-gradient(180deg, #0f0f23 0%, #0a0a15 100%) !important;
+    min-height: 100vh;
+    color: #ffffff;
+}
+
+body.index main {
+    background: transparent !important;
+}
+
+.app-header {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+    border-bottom: 1px solid #2a2a3e;
+    padding: 1.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    margin: 0 !important;
+}
+
+.app-header .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-header .logo {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.app-header .logo .logo-plus {
+    color: #6366f1;
+}
+
+.app-header .logo .logo-flix {
+    color: #ffffff;
+}
+
+.app-header .saved-btn {
+    background: #16162a;
+    border: 1px solid #2a2a3e;
+    color: #ffffff;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.app-header .saved-btn:hover {
+    background: #6366f1;
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.app-header .saved-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 0 3rem;
+}
+
+.hero-section .hero-title {
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-section .hero-subtitle {
+    font-size: 1.125rem;
+    color: #a0a0b0;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.section-title {
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.search-section {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .search-section .search-wrapper {
+    background: #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+  }
+  .search-section .search-wrapper .search-input {
+    border: none;
+    background: transparent;
+    flex-grow: 1;
+    font-size: 16px;
+    outline: none;
+  }
+  .search-section .search-wrapper .filter-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+.platforms-section {
+    padding: 2rem 0 3rem;
+    margin-bottom: 0 !important;
+}
+
+.platforms-section .platforms-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.platforms-section .nav-arrow {
+    background: #16162a;
+    border: 1px solid #2a2a3e;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: inherit;
+}
+
+.platforms-section .nav-arrow:hover {
+    background: #6366f1;
+    border-color: #6366f1;
+    transform: scale(1.1);
+}
+
+.platforms-section .nav-arrow:active {
+    transform: scale(0.95);
+}
+
+.platforms-section .platforms-list {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.platforms-section .platform-badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.platforms-section .platform-badge:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.platforms-section .platform-badge .platform-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.platforms-section .platform-badge.netflix {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.platforms-section .platform-badge.netflix .platform-logo {
+    color: #E50914;
+}
+
+.platforms-section .platform-badge.disney {
+    background: linear-gradient(135deg, #113CCF 0%, #1e56e0 100%);
+}
+
+.platforms-section .platform-badge.disney .platform-logo {
+    color: #ffffff;
+}
+
+.platforms-section .platform-badge.hbo {
+    background: linear-gradient(135deg, #000000 0%, #2a2a2a 100%);
+}
+
+.platforms-section .platform-badge.hbo .platform-logo {
+    color: #ffffff;
+}
+
+.platforms-section .platform-badge.skyshowtime {
+    background: linear-gradient(135deg, #007bff 0%, #0d6efd 100%);
+}
+
+.platforms-section .platform-badge.skyshowtime .platform-logo {
+    color: #ffffff;
+}
+
+.platforms-section .platform-badge.prime {
+    background: linear-gradient(135deg, #00A8E1 0%, #00c4ff 100%);
+}
+
+.platforms-section .platform-badge.prime .platform-logo {
+    color: #ffffff;
+}
+
+
+.top-list-section {
+    padding: 2rem 0 4rem;
+}
+
+.top-list-section h2 {
+    text-align: left !important;
+}
+
+.top-list-section .movies-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.top-list-section .movie-card {
+    background: #16162a;
+    border: 1px solid #2a2a3e;
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.top-list-section .movie-card:hover {
+    border-color: #6366f1;
+    transform: translateX(8px);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.2);
+}
+
+.top-list-section .movie-card .rank-badge {
+    position: relative;
+    min-width: 50px;
+    text-align: center;
+}
+
+.top-list-section .movie-card .rank-badge .crown-icon {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
+    filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.5));
+}
+
+.top-list-section .movie-card .rank-badge .rank-number {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.top-list-section .movie-card .movie-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.top-list-section .movie-card .movie-info .movie-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.top-list-section .movie-card .movie-info .movie-year {
+    font-size: 0.875rem;
+    color: #a0a0b0;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge .platform-logo {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.netflix {
+    background: #000000;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.netflix .platform-logo {
+    color: #E50914;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.disney {
+    background: #113CCF;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.disney .platform-logo {
+    color: #ffffff;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.hbo {
+    background: #000000;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.hbo .platform-logo {
+    color: #ffffff;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.skyshowtime {
+    background: #007bff;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.skyshowtime .platform-logo {
+    color: #ffffff;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.prime {
+    background: #00A8E1;
+}
+
+.top-list-section .movie-card .movie-platform .platform-badge.prime .platform-logo {
+    color: #ffffff;
+}
+
+.app-footer {
+    background: #1a1a2e;
+    border-top: 1px solid #2a2a3e;
+    padding: 2rem 0;
+    text-align: center;
+    color: #a0a0b0;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .app-header .header-container {
+        padding: 0 1rem;
+    }
+    
+    .app-header .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero-section {
+        padding: 3rem 0 2rem;
+    }
+    
+    .hero-section .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-section .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .platforms-section .platforms-list {
+        gap: 0.75rem;
+    }
+    
+    .platforms-section .platform-badge {
+        width: 52px;
+        height: 52px;
+    }
+    
+    .platforms-section .platform-badge .platform-logo {
+        font-size: 1.25rem;
+    }
+    
+    .top-list-section .movie-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .top-list-section .movie-card .rank-badge {
+        min-width: 40px;
+    }
+    
+    .top-list-section .movie-card .rank-badge .rank-number {
+        font-size: 1.5rem;
+    }
+    
+    .top-list-section .movie-card .movie-info .movie-title {
+        font-size: 1rem;
+    }
+    
+    .top-list-section .movie-card .movie-platform .platform-badge {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .top-list-section .movie-card .movie-platform .platform-badge .platform-logo {
+        font-size: 1rem;
+    }
+}
