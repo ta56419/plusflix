@@ -1,0 +1,10 @@
+CREATE TABLE movies
+(
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    year SMALLINT UNSIGNED NOT NULL,
+    director VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    duration FLOAT UNSIGNED NOT NULL,
+    PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
