@@ -2,7 +2,7 @@
 
 A movie catalog web app where you can browse films, filter by genre or streaming platform, leave reviews with ratings, save favorites, and manage everything through an admin panel. Built on a custom PHP MVC framework with MySQL and Docker.
 
-I made this for a university course to learn how frameworks actually work under the hood — routing, templating, ORM, front controller — instead of just using Laravel or Symfony out of the box.
+This is a university project with a small MVC framework. It covers routing, templates, database access and the front controller pattern.
 
 ---
 
@@ -22,7 +22,7 @@ I made this for a university course to learn how frameworks actually work under 
 
 ## Tech stack
 
-- **PHP 8** (no framework — custom MVC built from scratch)
+- **PHP 8** with a custom MVC framework
 - **MySQL 8.4** (Docker)
 - **Docker Compose** (MySQL + Adminer)
 - **LESS CSS** (precompiled to minified CSS)
@@ -97,7 +97,7 @@ plusflix/
 docker compose up -d
 ```
 
-This spins up MySQL on port 3306 and Adminer (DB browser) on `http://localhost:8085`.
+MySQL runs on port 3306. Adminer, the database browser, is available at `http://localhost:8085`.
 
 ### 2. Set up the config
 
@@ -149,7 +149,7 @@ Admin panel: `http://localhost:8000/index.php?action=admin-index`
 
 ---
 
-## What I learned building this
+## Topics covered
 
 - How MVC frameworks work internally (routing, front controller, templating engine)
 - ActiveRecord pattern for ORM without Doctrine/Eloquent
