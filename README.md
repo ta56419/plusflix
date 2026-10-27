@@ -14,7 +14,7 @@ This is a university project with a small MVC framework. It covers routing, temp
 - **Reviews** — anyone can leave a rating (1-10) and a comment on a movie
 - **Top rated** — homepage shows top 3 movies by average rating
 - **Favorites** — add/remove movies to a personal favorites list (session-based, with AJAX toggle)
-- **Admin panel** — full CRUD for movies, genres, and platforms (cookie-based auth)
+- **Admin panel** — CRUD for movies, genres and platforms, with a demo role cookie
 - **Theme switching** — toggle between dark/light/high-contrast modes
 - **Responsive LESS styles** — compiled from `.less` source files
 
@@ -132,6 +132,10 @@ php -S localhost:8000 -t public/
 Open `http://localhost:8000` in your browser.
 
 Admin panel: `http://localhost:8000/index.php?action=admin-index`
+
+The admin login is a local demo. The access code is checked in
+`templates/admin/login.html.php`, which sets a role cookie. Users are not
+authenticated on the server.
 
 ---
 
